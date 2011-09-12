@@ -1,0 +1,14 @@
+
+
+*.log
+*.dat
+*.suo
+*.docstates
+*.user
+GradeGrinder/*/bin/
+obj/
+_Resharper*
+*.vs10x
+*.*~
+
+
