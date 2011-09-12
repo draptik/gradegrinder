@@ -5,7 +5,7 @@
 *.suo
 *.docstates
 *.user
-GradeGrinder/*/bin/
+4.Realize/Src/GradeGrinder/*/bin/
 obj/
 _Resharper*
 *.vs10x

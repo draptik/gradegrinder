@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="GradeGrinder.Domain" namespace="GradeGrinder.Domain">
+
+  <class name="Student" table="STUDENT" lazy="true">
+
+    <id name="Id" column="ID_STUDENT" unsaved-value="null">
+      <generator class="native" />
+    </id>
+
+    <property name="LastName" column="LASTNAME" length="128" not-null="true" unique="false"/>
+    <property name="FirstName" column="FIRSTNAME" length="128" not-null="true" unique="false"/>
+
+  </class>
+</hibernate-mapping>
