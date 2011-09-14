@@ -7,7 +7,7 @@
 *.user
 4.Realize/Src/GradeGrinder/*/bin/
 obj/
-_Resharper*
+*/_Resharper*
 *.vs10x
 *.*~
 
