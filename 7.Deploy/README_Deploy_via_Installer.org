@@ -1,0 +1,6 @@
+* Creating setup.exe and GradeGrinder.Installer.msi file for deployment
+  1. Open VS2010
+  2. Select GradeGrinder.Installer project in Solution Explorer
+  3. Main Menu -> Build -> Rebuild -> GradeGrinder.Installer
+  4. If all went well the result should be in located in:
+     4.Realize\Src\GradeGrinder\GradeGrinder.Installer\Debug
