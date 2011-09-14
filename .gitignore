@@ -11,4 +11,5 @@ obj/
 *.vs10x
 *.*~
 
-
+4.Realize/Src/GradeGrinder/GradeGrinder.Installer/Debug/*
+4.Realize/Src/GradeGrinder/GradeGrinder.Installer/Release/*

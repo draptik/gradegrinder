@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGrinder.Persistence.Hi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGrinder.Gui", "GradeGrinder.Gui\GradeGrinder.Gui.csproj", "{0969A238-5835-4619-B33B-9BC0F6258587}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GradeGrinder.Installer", "GradeGrinder.Installer\GradeGrinder.Installer.vdproj", "{0F442832-ED58-4525-A843-08D6C9F0F94B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{0969A238-5835-4619-B33B-9BC0F6258587}.Release|Any CPU.ActiveCfg = Release|x86
 		{0969A238-5835-4619-B33B-9BC0F6258587}.Release|x86.ActiveCfg = Release|x86
 		{0969A238-5835-4619-B33B-9BC0F6258587}.Release|x86.Build.0 = Release|x86
+		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Debug|Any CPU.ActiveCfg = Debug
+		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Debug|x86.ActiveCfg = Debug
+		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Release|Any CPU.ActiveCfg = Release
+		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
