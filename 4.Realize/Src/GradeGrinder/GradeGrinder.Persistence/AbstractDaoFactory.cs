@@ -1,4 +1,6 @@
-﻿namespace GradeGrinder.Persistence
+﻿using GradeGrinder.Persistence.Dao;
+
+namespace GradeGrinder.Persistence
 {
     public abstract class AbstractDaoFactory
     {
