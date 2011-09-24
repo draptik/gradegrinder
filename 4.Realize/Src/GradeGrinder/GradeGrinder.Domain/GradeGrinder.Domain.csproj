@@ -81,10 +81,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <EmbeddedResource Include="Mapping.Xml\Student.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Mapping.Xml\Student.hbm.xml" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

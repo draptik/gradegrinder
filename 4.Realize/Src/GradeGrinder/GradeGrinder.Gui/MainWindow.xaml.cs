@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using log4net;
 
 namespace GradeGrinder.Gui
 {
@@ -19,9 +20,19 @@ namespace GradeGrinder.Gui
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Private Fields
+
+        private static readonly ILog Log = LogManager.GetLogger(typeof(MainWindow));
+
+        #endregion
+
+
         public MainWindow()
         {
+            log4net.Config.XmlConfigurator.Configure();
+
             InitializeComponent();
+            Log.Info("STARTED LOGGING...............");
         }
     }
 }
