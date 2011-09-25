@@ -1,0 +1,20 @@
+* Technologies and Frameworks
+** .NET Framework
+   4
+** IDE
+   Visual Studio 2010 Ultimate
+** Persistence
+   SQLite3
+** ORM
+   NHibernate 3
+** Logging
+   Log4Net
+** GUI
+*** Prism
+**** MVVM
+**** IoC/DI
+     Unity
+
+
+** Testing
+   NUnit
