@@ -4,7 +4,7 @@ using log4net;
 namespace GradeGrinder.Gui
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Shell.xaml
     /// </summary>
     public partial class Shell : Window
     {
@@ -18,9 +18,10 @@ namespace GradeGrinder.Gui
         public Shell()
         {
             log4net.Config.XmlConfigurator.Configure();
+            Log.Info("STARTED LOGGING...............");
 
             InitializeComponent();
-            Log.Info("STARTED LOGGING...............");
+
         }
     }
 }

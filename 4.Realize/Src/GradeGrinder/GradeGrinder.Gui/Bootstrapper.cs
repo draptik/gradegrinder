@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using GradeGrinder.Infrastructure.Constants;
-using GradeGrinder.Interfaces.Services;
 using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.UnityExtensions;
-using Microsoft.Practices.ServiceLocation;
 
 namespace GradeGrinder.Gui
 {
@@ -28,7 +22,9 @@ namespace GradeGrinder.Gui
 
         protected override void ConfigureModuleCatalog()
         {
-            base.ConfigureModuleCatalog();
+            //ModuleCatalog catalog = new ConfigurationModuleCatalog();
+
+            //base.ConfigureModuleCatalog();
 
             ModuleCatalog moduleCatalog = (ModuleCatalog)ModuleCatalog;
             moduleCatalog.AddModule(new ModuleInfo(ModuleNames.MainMenuModule, "GradeGrinder.MainMenuModule.MainMenuModule, GradeGrinder.MainMenuModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"));
@@ -41,7 +37,7 @@ namespace GradeGrinder.Gui
         {
             base.InitializeModules();
 
-            ServiceLocator.Current.GetInstance<IStatusBarService>().ShowStatusText("Ready");
+            //ServiceLocator.Current.GetInstance<IStatusBarService>().ShowStatusText("Ready");
         }
         #endregion
     }

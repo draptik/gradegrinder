@@ -8,9 +8,9 @@
     <Grid Height="Auto" Width="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <!--<RowDefinition Height="Auto" />
             <RowDefinition />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />-->
         </Grid.RowDefinitions>
         <ContentControl Name="MainMenuRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.MainMenuRegion}" Grid.Row="0" />
         <!--<ContentControl Name="ToolBarRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.ToolBarRegion}" Grid.Row="1" />

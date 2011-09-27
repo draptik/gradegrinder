@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGrinder.Persistence.Hi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGrinder.Gui", "GradeGrinder.Gui\GradeGrinder.Gui.csproj", "{0969A238-5835-4619-B33B-9BC0F6258587}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GradeGrinder.Installer", "GradeGrinder.Installer\GradeGrinder.Installer.vdproj", "{0F442832-ED58-4525-A843-08D6C9F0F94B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGrinder.Infrastructure", "GradeGrinder.Infrastructure\GradeGrinder.Infrastructure.csproj", "{8F985F19-E5A3-4A0C-BC3E-D174C539703F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeGrinder.Interfaces", "GradeGrinder.Interfaces\GradeGrinder.Interfaces.csproj", "{54B7EA1C-FA44-4287-BDDF-38189FD096BC}"
@@ -84,14 +82,6 @@ Global
 		{0969A238-5835-4619-B33B-9BC0F6258587}.Release|Mixed Platforms.Build.0 = Release|x86
 		{0969A238-5835-4619-B33B-9BC0F6258587}.Release|x86.ActiveCfg = Release|x86
 		{0969A238-5835-4619-B33B-9BC0F6258587}.Release|x86.Build.0 = Release|x86
-		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Debug|Any CPU.ActiveCfg = Debug
-		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Debug|Mixed Platforms.Build.0 = Debug
-		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Debug|x86.ActiveCfg = Debug
-		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Release|Any CPU.ActiveCfg = Release
-		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Release|Mixed Platforms.ActiveCfg = Release
-		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Release|Mixed Platforms.Build.0 = Release
-		{0F442832-ED58-4525-A843-08D6C9F0F94B}.Release|x86.ActiveCfg = Release
 		{8F985F19-E5A3-4A0C-BC3E-D174C539703F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F985F19-E5A3-4A0C-BC3E-D174C539703F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F985F19-E5A3-4A0C-BC3E-D174C539703F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU

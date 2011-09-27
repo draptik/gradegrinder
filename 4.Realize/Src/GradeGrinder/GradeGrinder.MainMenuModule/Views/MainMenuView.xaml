@@ -14,12 +14,14 @@
             <Separator />
             <MenuItem Header="Exit" Command="{Binding Path=ExitCommand}"/>
         </MenuItem>
+        <!--
         <MenuItem Header="Student">
-            <!--<MenuItem Header="New..." Command="{Binding Path=NewCustomerCommand}"/>-->
+            <MenuItem Header="New..." Command="{Binding Path=NewCustomerCommand}"/>
             <MenuItem Header="Browse..." Command="{Binding Path=BrowseCustomersCommand}"/>
         </MenuItem>
         <MenuItem Header="Master Data">
             <MenuItem Header="Title..." Command="{Binding Path=EditTitleCommand}"/>
         </MenuItem>
+        -->
     </Menu>
 </UserControl>

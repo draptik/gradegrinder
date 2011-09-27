@@ -5,6 +5,7 @@
 *.suo
 *.docstates
 *.user
+4.Realize/Src/GradeGrinder/bin/
 4.Realize/Src/GradeGrinder/*/bin/
 obj/
 4.Realize/Src/GradeGrinder/_Resharper.GradeGrinder/*

@@ -8,7 +8,7 @@ namespace GradeGrinder.MainMenuModule.Views
     /// <summary>
     /// Interaction logic for MainMenuView.xaml
     /// </summary>
-    public partial class MainMenuView : UserControl, IMainMenuView
+    partial class MainMenuView : UserControl, IMainMenuView
     {
         public MainMenuView()
         {

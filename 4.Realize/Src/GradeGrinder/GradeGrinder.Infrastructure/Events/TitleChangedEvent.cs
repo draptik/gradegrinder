@@ -1,6 +1,6 @@
 ﻿namespace GradeGrinder.Infrastructure.Events
 {
-    class TitleChangedEvent
+    public class TitleChangedEvent
     {
     }
 }
