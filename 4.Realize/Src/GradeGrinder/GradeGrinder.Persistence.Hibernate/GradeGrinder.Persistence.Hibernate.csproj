@@ -106,6 +106,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GradeGrinder.Common\GradeGrinder.Common.csproj">
+      <Project>{2BBFF07F-123B-4B5E-9475-6359AE84F72A}</Project>
+      <Name>GradeGrinder.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GradeGrinder.Domain\GradeGrinder.Domain.csproj">
       <Project>{E2ED7A3E-A3A5-4039-9A07-86C8A4B8619E}</Project>
       <Name>GradeGrinder.Domain</Name>
