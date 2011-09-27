@@ -1,20 +1,13 @@
 * Technologies and Frameworks
-** .NET Framework
-   4
-** IDE
-   Visual Studio 2010 Ultimate
-** Persistence
-   SQLite3
-** ORM
-   NHibernate 3
-** Logging
-   Log4Net
+** .NET Framework 4
+** IDE: Visual Studio 2010 Ultimate
+** Persistence: SQLite3
+** ORM: NHibernate 3.1
+** Logging: Log4Net 1.2.10
 ** GUI
-*** Prism
+*** Prism 4
 **** MVVM
-**** IoC/DI
-     Unity
+**** IoC/DI: Unity
+*** Extended WPF Toolkit 1.5.0
 
-
-** Testing
-   NUnit
+** Testing: NUnit 2.5.10

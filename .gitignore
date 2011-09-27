@@ -11,6 +11,7 @@ obj/
 4.Realize/Src/GradeGrinder/_Resharper.GradeGrinder/*
 *.vs10x
 *.*~
+README~
 
 4.Realize/Src/GradeGrinder/GradeGrinder.Installer/Debug/*
 4.Realize/Src/GradeGrinder/GradeGrinder.Installer/Release/*
