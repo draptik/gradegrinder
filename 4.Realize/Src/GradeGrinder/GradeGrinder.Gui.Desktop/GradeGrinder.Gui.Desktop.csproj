@@ -133,6 +133,10 @@
       <Project>{2BBFF07F-123B-4B5E-9475-6359AE84F72A}</Project>
       <Name>GradeGrinder.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GradeGrinder.Domain\GradeGrinder.Domain.csproj">
+      <Project>{E2ED7A3E-A3A5-4039-9A07-86C8A4B8619E}</Project>
+      <Name>GradeGrinder.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GradeGrinder.Gui.Infrastructure\GradeGrinder.Gui.Infrastructure.csproj">
       <Project>{8F985F19-E5A3-4A0C-BC3E-D174C539703F}</Project>
       <Name>GradeGrinder.Gui.Infrastructure</Name>
@@ -140,6 +144,14 @@
     <ProjectReference Include="..\GradeGrinder.Gui.Interfaces\GradeGrinder.Gui.Interfaces.csproj">
       <Project>{54B7EA1C-FA44-4287-BDDF-38189FD096BC}</Project>
       <Name>GradeGrinder.Gui.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GradeGrinder.Persistence.Hibernate\GradeGrinder.Persistence.Hibernate.csproj">
+      <Project>{5B405EEF-37A5-43F1-A06F-636773D953BA}</Project>
+      <Name>GradeGrinder.Persistence.Hibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GradeGrinder.Persistence\GradeGrinder.Persistence.csproj">
+      <Project>{92F4C7D5-BB9B-46A9-A67C-CF378CF2C8BE}</Project>
+      <Name>GradeGrinder.Persistence</Name>
     </ProjectReference>
     <ProjectReference Include="..\GradeGrinder.Service\GradeGrinder.Service.csproj">
       <Project>{CF63D098-A9FD-47DB-8F0A-8B97383CB5F7}</Project>
