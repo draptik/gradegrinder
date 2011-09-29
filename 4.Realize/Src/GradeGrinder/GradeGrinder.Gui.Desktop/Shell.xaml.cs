@@ -17,6 +17,8 @@ namespace GradeGrinder.Gui.Desktop
 
         private static readonly ILog Log = LogManager.GetLogger(typeof(Shell));
 
+        private readonly FileInfo _defaultDataFile;
+
         #endregion
 
 
@@ -25,8 +27,16 @@ namespace GradeGrinder.Gui.Desktop
             log4net.Config.XmlConfigurator.Configure();
             Log.Info("STARTED LOGGING...............");
 
-            var fileService = new FileService();
+            _defaultDataFile = GetDefaultDataFile();
 
+            if (_defaultDataFile != null) {
+                InitializeComponent();    
+            }
+        }
+
+        private static FileInfo GetDefaultDataFile()
+        {
+            var fileService = new FileService();
             FileInfo defaultDataFile = null;
             try {
                 defaultDataFile = fileService.GetDefaultDataFileByName(ConfigurationManager.AppSettings[ApplicationKeyNames.DataStorageLocationDefault]);
@@ -40,10 +50,7 @@ namespace GradeGrinder.Gui.Desktop
             catch (Exception ex) {
                 Log.Error("Error while getting default file!", ex);
             }
-
-            if (defaultDataFile != null) {
-                InitializeComponent();    
-            }
+            return defaultDataFile;
         }
     }
 }
