@@ -58,6 +58,10 @@
       <Project>{8F985F19-E5A3-4A0C-BC3E-D174C539703F}</Project>
       <Name>GradeGrinder.Gui.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GradeGrinder.Service\GradeGrinder.Service.csproj">
+      <Project>{CF63D098-A9FD-47DB-8F0A-8B97383CB5F7}</Project>
+      <Name>GradeGrinder.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\ApplicationKeyNames.cs" />
     <Compile Include="Constants\ModuleNames.cs" />
     <Compile Include="Constants\RegionNames.cs" />
     <Compile Include="Constants\ViewNames.cs" />
@@ -60,6 +61,10 @@
     <ProjectReference Include="..\GradeGrinder.Common\GradeGrinder.Common.csproj">
       <Project>{2BBFF07F-123B-4B5E-9475-6359AE84F72A}</Project>
       <Name>GradeGrinder.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GradeGrinder.Service\GradeGrinder.Service.csproj">
+      <Project>{CF63D098-A9FD-47DB-8F0A-8B97383CB5F7}</Project>
+      <Name>GradeGrinder.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

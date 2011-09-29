@@ -75,6 +75,10 @@
       <Project>{54B7EA1C-FA44-4287-BDDF-38189FD096BC}</Project>
       <Name>GradeGrinder.Gui.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GradeGrinder.Service\GradeGrinder.Service.csproj">
+      <Project>{CF63D098-A9FD-47DB-8F0A-8B97383CB5F7}</Project>
+      <Name>GradeGrinder.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\MainMenuView.xaml">

@@ -1,4 +1,4 @@
-﻿namespace GradeGrinder.Service.Constants
+﻿namespace GradeGrinder.Infrastructure.Constants
 {
     public class ApplicationKeyNames
     {
