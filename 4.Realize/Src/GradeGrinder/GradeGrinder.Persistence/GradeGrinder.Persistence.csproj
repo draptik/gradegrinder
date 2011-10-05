@@ -72,10 +72,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractDaoFactory.cs" />
-    <Compile Include="Dao\IStudentDao.cs" />
+    <Compile Include="Dao\IEditStudentModel.cs" />
     <Compile Include="IDao.cs" />
-    <Compile Include="ITransactionStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

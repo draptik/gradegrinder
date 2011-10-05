@@ -90,13 +90,13 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="uNhAddIns.Adapters">
+      <HintPath>..\..\..\Libraries\unhaddins\uNhAddIns.Adapters.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractHibernateDao.cs" />
-    <Compile Include="Dao\StudentDao.cs" />
-    <Compile Include="DefaultTransactionStrategy.cs" />
-    <Compile Include="HibernateDaoFactory.cs" />
-    <Compile Include="HibernateSessionManager.cs" />
+    <Compile Include="Dao.cs" />
+    <Compile Include="Dao\EditStudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

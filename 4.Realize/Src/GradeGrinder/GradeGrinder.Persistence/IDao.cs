@@ -1,17 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace GradeGrinder.Persistence
 {
-    public interface IDao<T, IdT>
+    public interface IDao<TEntity>
     {
-        T Save(T entity);
-        T FindUnique(IdT id, bool shouldLock);
-        IList<T> Find();
-        void Delete(T entity);
+        TEntity Get(Guid id);
+        void Save(TEntity entity);
+        //T Save(T entity);
+        //T FindUnique(IdT id, bool shouldLock);
+        //IList<T> Find();
+        //void Delete(T entity);
 
-        IList<T> FindByExample(T exampleInstance, params string[] propertiesToExclude);
-        T FindUniqueByExample(T exampleInstance, params string[] propertiesToExclude);
-        T SaveOrUpdate(T entity);
-        void CommitChanges();
+        //IList<T> FindByExample(T exampleInstance, params string[] propertiesToExclude);
+        //T FindUniqueByExample(T exampleInstance, params string[] propertiesToExclude);
+        //T SaveOrUpdate(T entity);
+        //void CommitChanges();
     }
 }

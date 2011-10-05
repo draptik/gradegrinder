@@ -3,7 +3,7 @@
 namespace GradeGrinder.Domain.Auto
 {
     [Serializable]
-    public class Student : AbstractDomainObject<long?>
+    public class Student : AbstractDomainObject<Guid>
     {
         #region Konstanten mit den Namen der Klasse und aller Properties
 
@@ -72,7 +72,7 @@ namespace GradeGrinder.Domain.Auto
         {
             string result = GetType()
             + ", Hash = " + GetHashCode().ToString("X")
-            + ", Id = " + ((!Id.HasValue) ? "NULL" : Id.ToString())
+            + ", Id = " + Id.ToString()
             + ((info == null) ? "" : ", " + info);
 
             return result;

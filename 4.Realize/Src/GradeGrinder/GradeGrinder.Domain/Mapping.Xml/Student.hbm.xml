@@ -4,8 +4,8 @@
 
   <class name="Student" table="STUDENT" lazy="true">
 
-    <id name="Id" column="ID_STUDENT" unsaved-value="null">
-      <generator class="native" />
+    <id name="Id">
+      <generator class="guid.comb" />
     </id>
 
     <property name="LastName" column="LASTNAME" length="128" not-null="true" unique="false"/>

@@ -1,4 +1,7 @@
 ﻿using System;
+using Castle.Windsor;
+using GradeGrinder.IoC.Windsor;
+using GradeGrinder.Persistence.Dao;
 using NUnit.Framework;
 using GradeGrinder.Domain;
 
@@ -9,8 +12,10 @@ namespace GradeGrinder.Persistence.Hibernate.Test
     {
         #region Fields and Properties
 
-        private ITransactionStrategy _transaction;
-        private AbstractDaoFactory _daoFactory;
+        //private ITransactionStrategy _transaction;
+        //private AbstractDaoFactory _daoFactory;
+
+        private IWindsorContainer _container;
 
         #endregion
 
@@ -24,8 +29,10 @@ namespace GradeGrinder.Persistence.Hibernate.Test
         [SetUp]
         public void SetUp()
         {
-            _transaction = new DefaultTransactionStrategy();
-            _daoFactory = new HibernateDaoFactory();
+            //_transaction = new DefaultTransactionStrategy();
+            //_daoFactory = new HibernateDaoFactory();
+
+            _container = ContainerProvider.Container;
         }
 
         #endregion
@@ -33,19 +40,45 @@ namespace GradeGrinder.Persistence.Hibernate.Test
 
         #region TESTS
 
-        [Test]
-        public void CreateDatabase()
+        [Test, Ignore]
+        public void CreateDatabase_Orig()
         {
             try {
-                _transaction.Begin();
+                //_transaction.Begin();
 
-                _daoFactory.GetStudentDao().Save(new Student { FirstName = "Max", LastName = "Mustermann" });
+                //_daoFactory.GetStudentDao().Save(new Student { FirstName = "Max", LastName = "Mustermann" });
 
-                _transaction.Commit();
+                //_transaction.Commit();
             }
             catch (Exception ex) {
-                _transaction.Rollback();
+                //_transaction.Rollback();
             }
+        }
+
+        [Test]
+        public void TestFoo()
+        {
+            Student student = CreateNewStudent();
+            Guid studentId;
+            IEditStudentModel model = _container.GetService<IEditStudentModel>();
+            model.SaveStudent(student);
+            studentId = student.Id;
+            model.SaveAll();
+            student = null;
+
+            student = model.GetStudent(studentId);
+            student.LastName = "FooBar";
+            model.CancelAll();
+            student = null;
+        }
+
+        #endregion
+
+        #region Helper
+
+        private static Student CreateNewStudent()
+        {
+            return new Student {FirstName = "Jon", LastName = "Doe"};
         }
 
         #endregion

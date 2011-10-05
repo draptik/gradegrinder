@@ -65,6 +65,9 @@
     <Reference Include="Castle.Core">
       <HintPath>..\packages\Castle.Core.2.5.2\lib\NET35\Castle.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.2.5.4\lib\NET35\Castle.Windsor.dll</HintPath>
+    </Reference>
     <Reference Include="Iesi.Collections">
       <HintPath>..\packages\Iesi.Collections.3.1.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
@@ -102,7 +105,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +118,10 @@
     <ProjectReference Include="..\GradeGrinder.Domain\GradeGrinder.Domain.csproj">
       <Project>{E2ED7A3E-A3A5-4039-9A07-86C8A4B8619E}</Project>
       <Name>GradeGrinder.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GradeGrinder.IoC.Windsor\GradeGrinder.IoC.Windsor.csproj">
+      <Project>{CE96F074-5961-4D8D-9071-9769A454C312}</Project>
+      <Name>GradeGrinder.IoC.Windsor</Name>
     </ProjectReference>
     <ProjectReference Include="..\GradeGrinder.Persistence.Hibernate\GradeGrinder.Persistence.Hibernate.csproj">
       <Project>{5B405EEF-37A5-43F1-A06F-636773D953BA}</Project>
