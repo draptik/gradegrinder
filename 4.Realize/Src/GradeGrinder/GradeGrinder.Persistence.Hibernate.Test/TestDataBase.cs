@@ -12,9 +12,6 @@ namespace GradeGrinder.Persistence.Hibernate.Test
     {
         #region Fields and Properties
 
-        //private ITransactionStrategy _transaction;
-        //private AbstractDaoFactory _daoFactory;
-
         private IWindsorContainer _container;
 
         #endregion
@@ -29,9 +26,6 @@ namespace GradeGrinder.Persistence.Hibernate.Test
         [SetUp]
         public void SetUp()
         {
-            //_transaction = new DefaultTransactionStrategy();
-            //_daoFactory = new HibernateDaoFactory();
-
             _container = ContainerProvider.Container;
         }
 
@@ -40,23 +34,8 @@ namespace GradeGrinder.Persistence.Hibernate.Test
 
         #region TESTS
 
-        [Test, Ignore]
-        public void CreateDatabase_Orig()
-        {
-            try {
-                //_transaction.Begin();
-
-                //_daoFactory.GetStudentDao().Save(new Student { FirstName = "Max", LastName = "Mustermann" });
-
-                //_transaction.Commit();
-            }
-            catch (Exception ex) {
-                //_transaction.Rollback();
-            }
-        }
-
         [Test]
-        public void TestFoo()
+        public void TestCreateAndSaveAStudent()
         {
             Student student = CreateNewStudent();
             Guid studentId;
