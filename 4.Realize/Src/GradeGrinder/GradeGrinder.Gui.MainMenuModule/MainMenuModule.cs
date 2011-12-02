@@ -31,12 +31,14 @@ namespace GradeGrinder.Gui.MainMenuModule
         public void Initialize()
         {
             //_container.RegisterInstance<INavigationService>(new Services.NavigationService(), new ContainerControlledLifetimeManager());
-
+            
             _container.RegisterType<IMainMenuViewModel, ViewModels.MainMenuViewModel>();
             _container.RegisterType<IMainMenuView, Views.MainMenuView>();
             _regionManager.RegisterViewWithRegion(RegionNames.MainMenuRegion, typeof(IMainMenuView));
 
- 
+            // ToolBar
+            _container.RegisterType<IToolBarView, Views.ToolBarView>();
+            _regionManager.RegisterViewWithRegion(RegionNames.ToolBarRegion, typeof (IToolBarView));
         }
 
         #endregion

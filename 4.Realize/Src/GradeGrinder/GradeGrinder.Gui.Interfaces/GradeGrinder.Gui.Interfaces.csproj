@@ -56,6 +56,7 @@
     <Compile Include="Services\IStatusBarService.cs" />
     <Compile Include="ViewModels\IMainMenuViewModel.cs" />
     <Compile Include="Views\IMainMenuView.cs" />
+    <Compile Include="Views\IToolBarView.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GradeGrinder.Common\GradeGrinder.Common.csproj">
