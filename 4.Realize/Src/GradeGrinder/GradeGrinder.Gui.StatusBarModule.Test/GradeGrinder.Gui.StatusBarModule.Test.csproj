@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E8F708C9-3481-4738-8057-640CF3F97833}</ProjectGuid>
+    <ProjectGuid>{E4FF8B4B-BADD-4E2B-A63D-EA7027475C52}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GradeGrinder.Service.Test</RootNamespace>
-    <AssemblyName>GradeGrinder.Service.Test</AssemblyName>
+    <RootNamespace>GradeGrinder.Gui.StatusBarModule.Test</RootNamespace>
+    <AssemblyName>GradeGrinder.Gui.StatusBarModule.Test</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -52,21 +52,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileServiceTest.cs" />
+    <Compile Include="TestStatusBarModule.cs" />
+    <Compile Include="TestStatusBarView.cs" />
+    <Compile Include="TestStatusBarService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestStatusBarViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GradeGrinder.Common\GradeGrinder.Common.csproj">
-      <Project>{2BBFF07F-123B-4B5E-9475-6359AE84F72A}</Project>
-      <Name>GradeGrinder.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GradeGrinder.Service\GradeGrinder.Service.csproj">
-      <Project>{CF63D098-A9FD-47DB-8F0A-8B97383CB5F7}</Project>
-      <Name>GradeGrinder.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
