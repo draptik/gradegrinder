@@ -8,13 +8,13 @@
     <Grid Height="Auto" Width="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <!--<RowDefinition Height="Auto" />
-            <RowDefinition />
-            <RowDefinition Height="Auto" />-->
+            <RowDefinition Height="Auto" />
+            <!-- <RowDefinition />-->
+            <RowDefinition Height="20" />
         </Grid.RowDefinitions>
         <ContentControl Name="MainMenuRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.MainMenuRegion}" Grid.Row="0" />
-        <!--<ContentControl Name="ToolBarRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.ToolBarRegion}" Grid.Row="1" />
-        <TabControl Name="DocumentRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.DocumentRegion}" Grid.Row="2" ItemContainerStyle="{StaticResource TabItemHeaderStyle}"/>
-        <ContentControl Name="StatusBarRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.StatusBarRegion}" Grid.Row="3" />-->
+        <ContentControl Name="ToolBarRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.ToolBarRegion}" Grid.Row="1" />
+        <!--<TabControl Name="DocumentRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.DocumentRegion}" Grid.Row="2" ItemContainerStyle="{StaticResource TabItemHeaderStyle}"/>-->
+        <ContentControl Name="StatusBarRegion" prism:RegionManager.RegionName="{x:Static Constants:RegionNames.StatusBarRegion}" Grid.Row="2" />
     </Grid>
 </Window>
